@@ -57,7 +57,6 @@
             <artifactId>spring-data-commons</artifactId>
             <version>2.5.6</version>
         </dependency>
-
         <dependency>
             <groupId>jakarta.activation</groupId>
             <artifactId>jakarta.activation-api</artifactId>
@@ -85,7 +84,6 @@
             <artifactId>spring-boot-starter-data-mongodb</artifactId>
         </dependency>
     </dependencies>
-
     <build>
         <plugins>
             <plugin>
@@ -102,5 +100,4 @@
             </plugin>
         </plugins>
     </build>
-
 </project>
