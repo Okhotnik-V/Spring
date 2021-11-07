@@ -7,7 +7,6 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class Counter implements Counting {
-
     private static final Pattern pattern = Pattern.compile("[" + "a A e E i I o O u U y Y" + "]");
 
     @Override

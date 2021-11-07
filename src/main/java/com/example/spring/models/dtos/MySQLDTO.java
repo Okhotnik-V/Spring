@@ -2,20 +2,20 @@ package com.example.spring.models.dtos;
 
 import javax.persistence.*;
 
-
 @Entity
 @Table(name = "my_db")
 public class MySQLDTO {
-    public String text;
+
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
+    public String text;
 
     public Long getId() {
         return id;
     }
 
-    public void setId() {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -23,7 +23,7 @@ public class MySQLDTO {
         return text;
     }
 
-    public void setText() {
+    public void setText(String text) {
         this.text = text;
     }
 }
