@@ -1,6 +1,5 @@
 package com.example.spring.models;
 
-import com.example.spring.models.dtos.StatisticsDTO;
 import com.example.spring.ui.Clocking;
 import com.example.spring.ui.SavingStatistic;
 
@@ -14,15 +13,14 @@ public class SaverStatistic implements SavingStatistic {
 
     @Override
     public List<String> saveStatistic(int vowelsNumber, int consonantsNumber, String vowels, String consonants, String line, String typeInput) {
-        StatisticsDTO statisticsDTO = new StatisticsDTO(vowelsNumber, consonantsNumber, vowels, consonants, line, typeInput, timestamp);
         List<String> listStatisticsDTO = new ArrayList<>();
-        listStatisticsDTO.add(statisticsDTO.getTypeInputStatistics());
-        listStatisticsDTO.add(statisticsDTO.getLineStatistics());
-        listStatisticsDTO.add(Integer.toString(statisticsDTO.getVowelsNumberStatistics()));
-        listStatisticsDTO.add(statisticsDTO.getVowelsStatistics());
-        listStatisticsDTO.add(Integer.toString(statisticsDTO.getConsonantsNumberStatistics()));
-        listStatisticsDTO.add(statisticsDTO.getConsonantsStatistics());
-        listStatisticsDTO.add(String.valueOf(statisticsDTO.getTimestampStatistics()));
+        listStatisticsDTO.add(typeInput);
+        listStatisticsDTO.add(line);
+        listStatisticsDTO.add(String.valueOf(vowelsNumber));
+        listStatisticsDTO.add(vowels);
+        listStatisticsDTO.add(String.valueOf(consonantsNumber));
+        listStatisticsDTO.add(consonants);
+        listStatisticsDTO.add(String.valueOf(timestamp));
         return listStatisticsDTO;
     }
 }

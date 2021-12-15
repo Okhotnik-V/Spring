@@ -3,6 +3,8 @@ package com.example.spring.models.dtos;
 import java.sql.Timestamp;
 
 public class StatisticsDTO {
+
+    private long id;
     private int vowelsNumber;
     private int consonantsNumber;
     private String vowels;
@@ -11,14 +13,8 @@ public class StatisticsDTO {
     private String typeInput;
     private Timestamp timestamp;
 
-    public StatisticsDTO(int vowelsNumber, int consonantsNumber, String vowels, String consonants, String line, String typeInput, Timestamp timestamp) {
-        this.vowelsNumber = vowelsNumber;
-        this.consonantsNumber = consonantsNumber;
-        this.vowels = vowels;
-        this.consonants = consonants;
-        this.line = line;
-        this.typeInput = typeInput;
-        this.timestamp = timestamp;
+    public long getIdNumberStatistics() {
+        return id;
     }
 
     public int getVowelsNumberStatistics() {

@@ -1,17 +1,12 @@
 package com.example.spring.models.dtos;
 
-
-import org.springframework.data.annotation.Id;
-
+import javax.persistence.Id;
 
 public class MongoDBDTO {
 
     @Id
     public String id;
     public String textMongoDB;
-
-    public MongoDBDTO() {
-    }
 
     public MongoDBDTO(String textMongoDB) {
         this.textMongoDB = textMongoDB;

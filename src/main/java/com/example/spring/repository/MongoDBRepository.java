@@ -6,5 +6,4 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface MongoDBRepository extends MongoRepository<MongoDBDTO, String> {
-    public MongoDBDTO findByTextMongoDB(String textMongoDB);
 }
